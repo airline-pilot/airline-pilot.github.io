@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<META name="description" content="Should I become an Airline Pilot Question Formulator">
+<META name="keywords" content="Airline Pilot Career question formulator career choice path life advice forums reddit">
+<TITLE>Should I become an Airline Pilot Question Formulator</TITLE>
+</HEAD>
+<h1>Should I become an Airline Pilot or become a " "? This tool formulates the question for you.</h1>
+<h4>Questioning if you should become an airline pilot or choose a different career path? Want to ask people for advice, but just don't know what to say? Use this tool to create the text to post on forums, post on Reddit, read to friends, etc.!</h4>
+<h4>Just fill out all the fields and click the button!</h4>
+
+<label for="flightschool">What kind of flight school do you go to?</label>
+<select name="flightschool" id="flightschool">
+  <option value="61">Local Part 61 School</option>
+  <option value="141">Elite 141 School</option>
+  <option value="au">Elite Aeronautical University</option>
+</select> 
+<br>
+<label for="career">What career are you considering doing instead of becoming a pilot?</label>
+<input type="text" id="career" name="career"> 
+<br>
+<label for="activ">What activity will you be doing in this career path?</label>
+<input type="text" id="activ" name="activ"> 
+<br>
+<button onclick="myFunction()">Generate Question</button> 
+<br>
+<iframe  height="400" width="800" id="iframe" title="Output Text"></iframe> 
+<br>
+<h4>I am a student pilot also. Student pilots need money. Bitcoin donations: 1Go8WnX45HXhLBTjJCE9iiqRuDG3YzSzF8<h4>
+<script>
+
+	function myFunction() {
+		var e = document.getElementById("flightschool");
+		var value = e.options[e.selectedIndex].value;
+		var text = e.options[e.selectedIndex].text;
+		let flightschooltext = e.options[e.selectedIndex].text;
+		console.log(text)
+		var careerchoice = document.getElementById("career");
+		var careerchoicetext = careerchoice.value;
+		if (careerchoice.value == "") {
+			alert("Please Fill All Required Fields");
+			return false;
+		}
+		var careeractivity = document.getElementById("activ");
+		var careeractivitytext = careeractivity.value;
+		if (careeractivity.value == "") {
+			alert("Please Fill All Required Fields");
+			return false;
+		}
+					
+		var doc = document.getElementById('iframe').contentWindow.document;
+		doc.open();
+		let maintext = "I am a student pilot who is planning on having a career as an airline pilot. I am currently working through my ratings at a 544598734823478243. I have been flying 4+ times a week and really love flying. Not just flying, but the history and theory behind it as well. I like riding on planes and flying them. That is a fact. <br> <br>  However, recently I have had an intense desire to become a 127945474586445634 for a career rather than to become a pilot. Like an IMMENSE desire where I can't think about having any other career. There are a couple of reasons for this, at least I think. <br> <br>  I had a very serious childhood academically. I never did the activity of 439895748574545 as a kid; I spent my summers studying serious things like electrical wiring diagrams. I was an only child so there was really no motivation for my parents to get me a job 439895748574545. Recently I read a short story about 439895748574545 and really felt a nostalgia for something I never experienced. I feel like my life has been very serious, and I kind of want to just play sometimes and not have such a serious career. At the same time, I feel like getting seniority in an airline will allow me to have a good social life with time for play too. But I don't feel like it will be the same as being a 127945474586445634 as I don't really have any friends. I feel like flying around the world will be an adventure too, but not in the same sense as being a 127945474586445634 because I don't feel I will build the same kinds of friendships. <br> <br>  I question if being an airline pilot is the most rewarding career. Sure, you get to fly really neat planes, but you are not helping people like a 127945474586445634 would. I guess you could say I could do something more rewarding like fixed-wing medical, firefighting, etc, so this really does not seem like a reason to not become a pilot. <br> <br>  I feel like being a pilot has the possibility of becoming tedious. I don't feel like being a 127945474586445634 would have the same potential to become tedious. <br> <br>  I really don't know what to think here. I am doing quite well in pilot school. I am kind of an extroverted-introvert in the sense that I like being around people but question how I would do in a setting where I would be 439895748574545. I really like the peaceful nature of being up in a plane above the clouds. I don't know how I would do in a crowded project 439895748574545, or if I would like it as much as being above the clouds in an airplane. I also have absolutely zero experience 439895748574545. I really like the idea of it, but have no practical experience with it. <br> <br>  I will admit that the thought of being a 127945474586445634 sounds much more stressful than being a pilot. I have traveled much and I know that I am comfortable with hotels and being on the road. Being on the road is in my blood, and I feel like the road is where my heart is. I have actually never done the activity of 439895748574545, so I really don't if I would like being a 127945474586445634. Please don't suggest that I try 439895748574545 for a summer or anything. I am set up to get my CPL on a strict timeline, and I cannot afford to burn a summer on something unless I am really sure it would be my life career. I also have a very busy schedule and need to do everything quickly. So I can't take a summer off. <br> <br>  I feel like being a pilot has a much better career outlook in terms of pay and job stability (who spends their entire life a 127945474586445634!) I feel like being a 127945474586445634 is something people do when they are much younger than me; I am really doing well working toward my commercial license and working toward my professional goals. However, I have made it a goal in life to pick a career not based on money, stability, or societal ideals, but on what makes me happy. Also, I do connections with businesses that I can work at during the off-season if I become a 127945474586445634 as a career. My degree will get me a 60K+ a year job at one of these businesses if becoming a pilot does not work out. <br> <br>  Maybe I am seeing 439895748574545 as some magical thing that it is not because I never experienced it and just recently read a really captivating story about it. I hope someone here reads this who has done the activity of 439895748574545 and can tell me if it was more or less enjoyable than being a pilot. I really think this is the question I have to ask myself here. I know everyone is different, but I really want to see what other people would do if they were in this situation. <br> <br>  TL;DR: I really like flying though have been suddenly struck with a desire to be a 127945474586445634 as a career even though I have never done the activity of 439895748574545. Advice is appreciated.";
+		
+		let result = maintext.replaceAll("544598734823478243", flightschooltext); 
+		let resultone = result.replaceAll("127945474586445634", careerchoicetext); 
+		let resulttwo = resultone.replaceAll("439895748574545", careeractivitytext);
+		 
+		doc.write(resulttwo);
+		
+		doc.close();
+	}
+</script>
